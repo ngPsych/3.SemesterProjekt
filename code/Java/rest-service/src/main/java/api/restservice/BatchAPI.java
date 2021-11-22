@@ -11,10 +11,10 @@ public class BatchAPI {
 
     private BatchController batchController = new BatchController();
 
-    @GetMapping
+    @GetMapping("batch/all")
     public Batch batch(@RequestParam(value="id", defaultValue = "1") float id) {
         id = batchController.getBatchId();
-        return new Batch(id);
+        return new Batch(Float.toString(id));
     }
 
 }

@@ -22,8 +22,9 @@ public class Main {
             cmd.start();
             Thread.sleep(2000);
             */
-            batch.getBatchId();
+            //batch.getBatchId();
             //batch.getBatchAmount();
+            cmd.start();
 
         } catch (Throwable ex) {
             ex.printStackTrace();

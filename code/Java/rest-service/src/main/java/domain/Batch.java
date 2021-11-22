@@ -4,22 +4,22 @@ import domain.BatchController;
 
 public class Batch {
 
-    private float id;
+    private String id;
     private BatchController batchController;
 
     public Batch() {
 
     }
 
-    public Batch(float id) {
+    public Batch(String id) {
         this.id = id;
     }
 
-    public float getId() {
+    public String getId() {
         return id;
     }
     //TEST
-    public void setId(float id) {
+    public void setId(String id) {
         this.id = id;
     }
 }
